@@ -1,5 +1,3 @@
-```mermaid
-graph TD;
 sequenceDiagram
     participant browser
     participant server
@@ -19,7 +17,7 @@ sequenceDiagram
 
     browser-->server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    server--->browser: the CSS file
+    server-->browser: the CSS file
     deactivate server
 
     browser-->server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
@@ -35,4 +33,4 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
-```
+
